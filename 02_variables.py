@@ -7,6 +7,9 @@ b = 2
  
 c = 7
 
+d = a + b + c;
+print(d)
+
 name = 'Govind'
 
 print(a + b + c)

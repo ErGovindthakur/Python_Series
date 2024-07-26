@@ -8,6 +8,7 @@ age = 19;
 marks = 7.92;
 isTrue = True
 
+
 _Govind = 'You can create variable starting with (_) symbol'
 
 print(_Govind)
@@ -18,3 +19,11 @@ age2 = 18; # you can create variable using numeric value but not present at star
 @Area = 12; # You can't create variable using @ symbol
 go@123 = 123; # You can't create variable using @ symbol
 '''
+
+myName = 'Govind'
+print(myName)
+
+MyName = 'Govind'
+
+_myName = 'Govind'
+print(_myName)

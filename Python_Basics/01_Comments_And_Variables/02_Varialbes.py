@@ -55,3 +55,11 @@ One-line logic
 
 Variable → reference → object → class
 '''
+
+# Note -> In Python, variables do not store values directly; they store references to objects.
+
+# 🔹 Practical Proof (Simple Example)
+x = 10
+y = x
+print(id(x)) # output -> 140707898909768
+print(id(y)) # output -> 140707898909768

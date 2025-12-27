@@ -1,4 +1,4 @@
-## What is Python ?
+## 1.  What is Python ?
 * Python is a high-level, interpreted and easy-to-read programming language used for web development, data science, automation, and AI due to its simplicity and powerful libraries.
 
 ### ✅ Why is Python popular?
@@ -46,3 +46,7 @@ Python helps us to:
 * Beginner-friendly
 
 * Strong community support
+
+## 2. Python origin
+* Python was created in 1991 by Guido van Rossum. He developed Python with the goal of making a programming language that is easy to read, easy to write, and simple to understand. Python was inspired by other languages like ABC, but it focused more on clean syntax and productivity. Guido named it Python after the comedy show Monty Python’s Flying Circus, not after the snake. Today, Python is widely used in web development, data science, artificial intelligence, and automation due to its simplicity and power.
+

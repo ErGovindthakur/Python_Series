@@ -1,5 +1,5 @@
 ## What is Python ?
-* Python is a high-level,interpreted and easy-to-read programming language used for web development, data science, automation, and AI due to its simplicity and powerful libraries.
+* Python is a high-level, interpreted and easy-to-read programming language used for web development, data science, automation, and AI due to its simplicity and powerful libraries.
 
 ### ✅ Why is Python popular?
 

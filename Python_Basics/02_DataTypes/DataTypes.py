@@ -36,6 +36,7 @@ print(type(points))
 
 # c) Range
 nums = range(1,3)
+print(nums)
 print(type(nums))
 
 
@@ -58,3 +59,7 @@ print(type(student))
 x = None
 print(x)
 print(type(x))
+
+a = (20,)
+print(a)
+print(type(a))

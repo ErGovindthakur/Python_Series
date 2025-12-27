@@ -50,3 +50,18 @@ Python helps us to:
 ## 2. Python origin
 * Python was created in 1991 by Guido van Rossum. He developed Python with the goal of making a programming language that is easy to read, easy to write, and simple to understand. Python was inspired by other languages like ABC, but it focused more on clean syntax and productivity. Guido named it Python after the comedy show Monty Python’s Flying Circus, not after the snake. Today, Python is widely used in web development, data science, artificial intelligence, and automation due to its simplicity and power.
 
+## 3. ✅ How Python Works (Simple Explanation)
+
+> Python works in a step-by-step manner:
+
+1. First, you write Python code in a .py file.
+
+2. When you run the program, the Python Interpreter reads the code line by line.
+
+3. The interpreter converts the code into bytecode (an intermediate form).
+
+4. This bytecode is then executed by the Python Virtual Machine (PVM).
+
+5. The result is shown as output.
+
+👉 Because Python executes code line by line, it is called an interpreted language.

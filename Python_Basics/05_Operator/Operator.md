@@ -88,6 +88,18 @@ print(not True)         # False
 print(0 and 5)          # 0
 print(5 and 10)         # 10
 print(0 or 7)           # 7
+
+# Note
+'''
+and
+Returns first falsy value
+If none → returns last operand
+
+or
+Returns first truthy value
+If none → returns last operand
+
+'''
 ```
 
 ---

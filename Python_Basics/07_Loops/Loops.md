@@ -13,8 +13,9 @@
 for variable in sequence:
     # code block
 ```
-### Example -> Print the numbers
+### Example 
 ```py
+# Example 1 ->  Print the numbers
 for i in range(1, 6):
     print(i)
 

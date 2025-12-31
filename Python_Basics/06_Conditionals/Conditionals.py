@@ -14,3 +14,11 @@ if marks > 30:
           print("With Grad C")
 else:
      print("Fail")
+
+
+# writing code for ternary
+
+ans = input("Say -> Yes/No ")
+
+ans = ans.lower()
+print("Yes") if ans == "yes" else print("No")

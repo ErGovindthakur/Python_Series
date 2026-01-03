@@ -142,8 +142,8 @@ with open("data.txt", "r") as file:
     print(content)
 ```
 
-✔ Automatically closes file
-✔ Prevents resource leaks
+* ✔ Automatically closes file
+* ✔ Prevents resource leaks
 
 ---
 

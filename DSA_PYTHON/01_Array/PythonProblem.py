@@ -28,8 +28,10 @@ def findDup(ls):
 # 2. find second largest num from the given array of num
 
 def secondLarge(arr):
-     large = 0
-     sLarge = 0
+     # large = 0
+     # sLarge = 0
+     large = float('-inf')
+     sLarge = float('-inf')
      
      for elem in arr:
           if elem > large:

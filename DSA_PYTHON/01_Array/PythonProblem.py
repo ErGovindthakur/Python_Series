@@ -22,4 +22,25 @@ def findDup(ls):
                freq[num] = 1
      return dupTracker
 
-print(findDup([1,2,3,1,4,5,3,2]))
+# print(findDup([1,2,3,1,4,5,3,2]))
+
+
+# 2. find second largest num from the given array of num
+
+def secondLarge(arr):
+     large = 0
+     sLarge = 0
+     
+     for elem in arr:
+          if elem > large:
+               sLarge = large
+               # print(f"Second Large -> {sLarge}")
+               large = elem
+               # print(f"Large -> {large}")
+          if elem != large and sLarge < elem:
+               sLarge = elem
+          
+     return sLarge
+
+print(secondLarge([1,5,2,8,9,7,10,5])) 
+# tmc => O(n) and spc => O(1)

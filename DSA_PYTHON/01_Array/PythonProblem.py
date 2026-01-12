@@ -62,4 +62,19 @@ def findMaxConSecOnes(arr):
      return conSecOne
      
 
-print(findMaxConSecOnes([1,1,0,0,0,1,1,1,0,1,1]))
+# print(findMaxConSecOnes([1,1,0,0,0,1,1,1,0,1,1]))
+
+
+def findMaxConSecZeros(arr):
+     conSecZero = 0
+     count = 0
+     for i in range(len(arr)):
+          if arr[i] == 0:
+               count = count+1
+               if conSecZero < count:
+                    conSecZero = count
+          else:
+               count = 0
+     return conSecZero
+
+print(findMaxConSecZeros([1,1,0,0,0,1,1,1,0,1,1]))

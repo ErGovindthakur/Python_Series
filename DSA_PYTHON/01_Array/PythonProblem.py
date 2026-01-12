@@ -44,5 +44,22 @@ def secondLarge(arr):
           
      return sLarge
 
-print(secondLarge([1,5,2,8,9,7,10,5])) 
+# print(secondLarge([1,5,2,8,9,7,10,5])) 
 # tmc => O(n) and spc => O(1)
+
+# 3. find max consecutive one's or zero's
+
+def findMaxConSecOnes(arr):
+     conSecOne = 0
+     count = 0
+     for i in range(len(arr)):
+          if arr[i] == 1:
+               count = count+1
+               if conSecOne < count:
+                    conSecOne = count
+          else:
+               count = 0
+     return conSecOne
+     
+
+print(findMaxConSecOnes([1,1,0,0,0,1,1,1,0,1,1]))

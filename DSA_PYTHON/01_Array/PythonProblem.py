@@ -77,4 +77,21 @@ def findMaxConSecZeros(arr):
                count = 0
      return conSecZero
 
-print(findMaxConSecZeros([1,1,0,0,0,1,1,1,0,1,1]))
+# print(findMaxConSecZeros([1,1,0,0,0,1,1,1,0,1,1]))
+
+# 4. Two sum problem
+
+def twoSum(arr,target):
+     
+     resultArr = []
+     if len(arr) < 2:
+          return arr
+     
+     for i in range(len(arr)):
+          for j in range(len(arr)):
+              if arr[i]+arr[j]==target and i != j:
+                    return i,j
+     
+     # return resultArr
+
+print(twoSum([1,5,3,4,8,7],7))

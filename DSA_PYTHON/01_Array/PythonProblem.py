@@ -94,4 +94,17 @@ def twoSum(arr,target):
      
      # return resultArr
 
-print(twoSum([1,5,3,4,8,7],7))
+# print(twoSum([1,5,3,4,8,7],7))
+
+def twoSum2(arr,target):
+    seen = {}
+    
+    for i in range(len(arr)):
+        diff = target - arr[i]
+        
+        if diff in seen:
+            return seen[diff], i
+        
+        seen[arr[i]] = i
+
+print(twoSum2([1,5,3,4,8,7],7))

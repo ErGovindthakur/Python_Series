@@ -12,6 +12,12 @@
 
 5. When you have to find multiple stuffs (pair, triplets, Quadruple).
 
-> ####  Note 1. Two pointer and sliding window both are diff approaches
+6. If we have restriction of not using extra space.
 
-> #### Note 2. Two pointer approach time complexity is O(n)
+7. If you are using two pointer than you have to change at least one pointer or both after each operation.
+
+8. When our both pointer meet at specific pointer or overlap each other than terminate the program.
+
+> ####  Note 1. Two pointer and sliding window both are diff approaches.
+
+> #### Note 2. Two pointer approach time complexity is O(n).

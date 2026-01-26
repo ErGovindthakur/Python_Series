@@ -14,4 +14,5 @@ def twoSum1(arr,target):
      
      return -1
 
+# tmc => O(n^2), spc => O(1)
 print(twoSum1([1,2,7,5],7))

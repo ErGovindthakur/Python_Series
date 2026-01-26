@@ -1,61 +1,74 @@
-# Solving two sum II problem using two pointer approach
+def two_sum_bruteforce(arr, target):
+    """
+    Brute Force Approach
+    Works for any array (sorted or unsorted)
 
-# 1. Brute force without using two pointer approach
+    Time Complexity: O(n^2)
+    Space Complexity: O(1)
+    """
+    n = len(arr)
 
-def twoSum1(arr,target):
-     if len(arr) < 2:
-          return arr
-     
-     for i in range(len(arr)):
-          for j in range(1,len(arr)):
-               if arr[i] + arr[j] == target and i != j:
-                    return [i,j]
-               
-     
-     return -1
+    for i in range(n):
+        for j in range(i + 1, n):
+            if arr[i] + arr[j] == target:
+                return [i, j]
 
-# tmc => O(n^2), spc => O(1)
-# print(twoSum1([1,2,7,5],7))
+    return -1
 
-# 2. better approach using dict
 
-def twoSum2(arr,target):
-     if len(arr)<2:
-          return arr
-     
-     freq = {} # creating empty dict to track elm
-     
-     for i in range(len(arr)):
-          diff = target - arr[i]
-          
-          if diff in freq:
-               return freq[diff],i
-          else:
-              freq[arr[i]] = i
-          
-     return -1
-# tmc => O(n), spc => O(n)
-# print(twoSum2([1,2,7,5],7))
+def two_sum_hashmap(arr, target):
+    """
+    Hash Map (Dictionary) Approach
+    Best general solution for unsorted arrays
 
-# 3. two pointer approach to solve two sum problem
+    Time Complexity: O(n)
+    Space Complexity: O(n)
+    """
+    seen = {}
 
-def twoSumTwoPointer(arr,target):
-     if len(arr)<2:
-          return arr
-     
-     st = 0
-     end = len(arr)-1
-     
-     while end > st:
-          
-          if arr[st] + arr[end] == target:
-               return [st, end]
-          
-          if arr[st]+arr[end] < target:
-               st = st+1
-          else:
-               end = end - 1
-     
-     return -1
+    for i, num in enumerate(arr):
+        diff = target - num
 
-print(twoSumTwoPointer([1,2,7,5],7))
+        if diff in seen:
+            return [seen[diff], i]
+
+        seen[num] = i
+
+    return -1
+
+
+def two_sum_two_pointer(arr, target):
+    """
+    Two Pointer Approach
+    Array MUST be sorted
+
+    Time Complexity: O(n)
+    Space Complexity: O(1)
+    """
+    left = 0
+    right = len(arr) - 1
+
+    while left < right:
+        s = arr[left] + arr[right]
+
+        if s == target:
+            return [left, right]
+        elif s < target:
+            left += 1
+        else:
+            right -= 1
+
+    return -1
+
+
+# -------------------------------
+# Example Usage
+# -------------------------------
+
+nums_unsorted = [1, 2, 7, 5]
+nums_sorted = [1, 2, 5, 7]
+target = 7
+
+print("Brute Force:", two_sum_bruteforce(nums_unsorted, target))
+print("Hash Map   :", two_sum_hashmap(nums_unsorted, target))
+print("Two Pointer:", two_sum_two_pointer(nums_sorted, target))

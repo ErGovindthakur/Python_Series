@@ -26,14 +26,16 @@ def two_sum_hashmap(arr, target):
     """
     seen = {}
 
-    for i, num in enumerate(arr):
-        diff = target - num
+    # for i, num in enumerate(arr):
+    for i in range(len(arr)):
+        # print(f"num -> {arr[i]}, i -> {i}")
+        diff = target - arr[i]
 
         if diff in seen:
             return [seen[diff], i]
 
-        seen[num] = i
-
+        seen[arr[i]] = i
+        # print(f"seen -> {i} , {seen}")
     return -1
 
 
